@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Kaye </title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kaye Gualingco">
+    <meta name="author" content="Kaye Gualingco">
+    <link rel="stylesheet" href="styles/base.css">
+   <script src="getdates.js" defer></script>
+
 </head>
 <body>
-    <h1>WDD 131- Kaye Gualingco</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - Kaye J. Gualingco</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/kaye-gualingco-4171412ba/">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/.">I-learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/17?lang=eng&id=p13#p13">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+      <div class="info">
+        <div class="profile">
+            <img src="images/profile.jpg" alt="My name is Kaye Gualingco" width="200">
+        </div>
+
+        <div class="left">
+            <p>My name is Kaye Gualingco, and I am 21 years old. I was born and raised in the Philippines, where you can find beautiful islands and beaches. I am currently studying software development online. I love to read, dance, sing, and most especially to travel.</p>
+            
+        </div>
+        
+        <h3>Bacolod, Philippines</h3>
+        <div class="right">
+            <p>The Philippines is located in the western Pacific Ocean. It is made up of over 7,641 islands. The Philippines is also a popular tourist destination, known for its natural beauty, rich history, and vibrant culture. Also, Bacolod is known as the City of Smiles because of the Masskara Festival held every October; it is the capital city of the province of Negros Occidental in the Philippines.</p>
+        </div>
+        
+        <div class="flag">
+            <img src="images/flag.jpg" alt="Philippines" width="200">
+        </div>
+       
+        </div>
+        </section>
+        
+        <section class="card2">
+            <h2>Web Dev Resources</h2>
+            
+            <ul>
+                <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+                <li><a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a></li>
+                <li><a href="https://syntax.fm/">Syntax.fm</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network (MDN)</a></li>
+            </ul>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+
+        <p id="lastModified"></p>
+    </footer>
+    
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+    </script>
 </body>
 </html>
