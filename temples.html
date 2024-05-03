@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album </title>
+    <meta name="description" content="Design, develop, test, and then deploy a temple album page using own selections of temple pictures.">
+    <meta name="author" content="Kaye Gualingco">
+    <script src="temples.js" defer></script>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="menu-toggle">&#9776;</button>
+        <nav>
+            <ul>
+                <li><a href="#"class="active">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+
+            </ul>
+        </nav>
+        
+
+    </header>
+    <main>
+        <h2 id="mainHeading">Home</h2>
+        <div class="container">
+        
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+    
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cebu.jpg" alt="Temple">
+                <figcaption>Cebu Philippines Temple</figcaption>
+            </figure>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+    </script>
+</body>
+</html>

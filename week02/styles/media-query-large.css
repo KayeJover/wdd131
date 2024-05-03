@@ -1,0 +1,8 @@
+
+header{
+    background-color: black;
+    text-decoration: aliceblue;
+}
+main{
+    grid-template-columns: 1fr 1fr;
+}
