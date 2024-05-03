@@ -13,5 +13,5 @@ if (currentYearElement) {
 
 const lastModifiedElement = document.getElementById('lastModified');
 if (lastModifiedElement) {
-    lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate;
+    lastModifiedElement.textContent = 'Last Modification: ' + lastModifiedDate;
 }
