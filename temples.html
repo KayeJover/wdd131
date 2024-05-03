@@ -6,17 +6,17 @@
     <title>Temple Album </title>
     <meta name="description" content="Design, develop, test, and then deploy a temple album page using own selections of temple pictures.">
     <meta name="author" content="Kaye Gualingco">
-    <script src="temples.js" defer></script>
+    <script src="scripts/temples.js" defer></script>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button class="menu-toggle">&#9776;</button>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
         <nav>
             <ul>
-                <li><a href="#"class="active">Home</a></li>
+                <li><a href="#" class="active">Home</a></li>
                 <li><a href="#">Old</a></li>
                 <li><a href="#">New</a></li>
                 <li><a href="#">Large</a></li>
@@ -27,7 +27,8 @@
         
 
     </header>
-    <main>
+    <main class="main-content">
+
         <h2 id="mainHeading">Home</h2>
         <div class="container">
         
@@ -79,6 +80,8 @@
     <script>
         document.getElementById('currentyear').textContent = new Date().getFullYear();
         document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+
+        
     </script>
 </body>
 </html>

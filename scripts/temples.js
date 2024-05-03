@@ -12,18 +12,16 @@ if (currentYearElement) {
 
 const lastModifiedElement = document.getElementById('lastModified');
 if (lastModifiedElement) {
-    lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate;
+    lastModifiedElement.textContent = 'Last Modification: ' + lastModifiedDate;
 }
-
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('nav');
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-    // Change the hamburger icon to an 'X'
-    if (nav.classList.contains('active')) {
-        menuToggle.textContent = '✕'; // 'X' character
+menuToggle.addEventListener('click', function() {
+    nav.classList.toggle('open');
+    if (nav.classList.contains('open')) {
+        menuToggle.innerHTML = '&#10005;'; // Change to close icon (X)
     } else {
-        menuToggle.textContent = '☰'; // Hamburger icon
+        menuToggle.innerHTML = '&#9776;'; // Change back to hamburger icon
     }
 });

@@ -10,12 +10,12 @@ body {
 
 /* mobile **************************/
 header {
-	background-color: #e27396;
+	background-color: #e56399;
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-    color: #eaf2d7;
+    color: #f7ffe4;
 }
 
 header,
@@ -25,22 +25,24 @@ main {
 
 h1 {
 	font-size: 2rem;
+	margin-left: 50px;
 }
 
 nav {
 	display: flex;
 	flex-direction: column;
-    font-size:larger;
-    
-
+    font-size:larger;	
 }
 
 nav a {
 	display: block;
-    color: #eaf2d7;
+    color: #24292a;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
+	margin-inline-start: 10px;
+    margin-inline-end: 80px;
+    font-size:100%;
 }
 
 nav a:hover {
@@ -49,40 +51,47 @@ nav a:hover {
 nav ul {
     list-style-type: none;
     
-    
 }
 .active {
-	color: yellow;
+	color: #2a2a00;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    
+.container figure {
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.container figcaption{
+	padding:20px;
+}
+figure img{
+	width:350px;
 }
 h2{
     text-align: center;
     padding:20px;
-}
+	font-size:200%;
 
-figure {
-    display:grid;
-    border: 1px solid #ccc;
-}
-
-figcaption {
-    text-align: center;
 }
 
 footer{
-	background-color: #e27396;
+	background-color: #e56399;
     display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-    color:rgb(204, 204, 204);
+    color:#282828;
     font-weight: 100;
     font-size: 100%;
     margin:10px;
@@ -91,7 +100,29 @@ footer{
 #lastModified {
     position: absolute;
     margin-top: 50px;
-    color: #FFC55A;
+    color: #322712;
      
 }
+.menu-toggle {
+    display: block; /* Show the hamburger button */
+}
 
+@media (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hide the menu when hamburger icon is clicked */
+    nav.open {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* 1 column for mobile views */
+    }
+}
