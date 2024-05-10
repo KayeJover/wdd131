@@ -1,0 +1,10 @@
+
+  @media (max-width: 768px) {
+    .large-image img {
+      max-width: 70%;
+      max-height: 70%;
+    }
+  }
+  
+  
+  

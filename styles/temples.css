@@ -123,6 +123,6 @@ footer{
 }
 @media (max-width: 768px) {
     .container {
-        grid-template-columns: 1fr; /* 1 column for mobile views */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 }

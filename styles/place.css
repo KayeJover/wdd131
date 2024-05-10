@@ -1,0 +1,109 @@
+/* Global CSS variables */
+:root {
+  --secondary-color: #0038a8; /* Dark Blue */
+  --background-color: #e00b24; /* Red */
+  --primary-color: #fcd116; /* Yellow */
+}
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  
+  
+}
+
+/* Header styles */
+header {
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  text-align: center;
+  color: white;
+
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Hero section styles */
+.hero {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.hero img {
+  width: 100%;
+  height: 800px;
+}
+
+/* Main content styles */
+.main-content {
+  padding: 2rem;
+}
+.data{
+    position: absolute;
+    color: black;
+    top:100px;
+    margin:50px;
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+    box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding:10px;
+    text-align: center;
+    width:300px;
+}
+
+.data p {
+    font-weight: bold; /* Make all labels normal weight */
+    display: flex;  
+    
+}
+  
+  .data p:nth-of-type(1) label,
+  .data p:nth-of-type(2) label,
+  .data p:nth-of-type(3) label,
+  .data p:nth-of-type(4) label,
+  .data p:nth-of-type(5) label,
+  .data p:nth-of-type(6) label,
+  .data p:nth-of-type(7) label,
+  .data p:nth-of-type(8) label {
+    font-weight: normal; /* Make specific labels bold */
+  }
+  
+h2{
+    position:relative;
+    color: white;
+    background-color: var(--primary-color);
+    padding:20px;
+    text-align: left;
+    right:30px;
+    
+    
+}
+/* Footer styles */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+    img {
+      height: 100%; /* Set a taller height for mobile views */
+      width: auto;
+    }
+  }
+/* Pseudo element for weather icon */
+.main-content::after {
+  content: url('weather-icon.png');
+  display: block;
+  margin-top: 1rem;
+}
+
