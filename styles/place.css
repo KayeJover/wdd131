@@ -1,109 +1,154 @@
 /* Global CSS variables */
 :root {
   --secondary-color: #0038a8; /* Dark Blue */
-  --background-color: #e00b24; /* Red */
+  --background-color: #FF101F; /* Red */
   --primary-color: #fcd116; /* Yellow */
 }
-
-/* General styles */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--background-color);
-  overflow-x: hidden;
-  
-  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
 header {
   background-color: var(--secondary-color);
   padding: 2rem;
   text-align: center;
   color: white;
-
 }
 
-header h1 {
-  margin: 0;
-}
-
-/* Hero section styles */
-.hero {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.hero img {
-  width: 100%;
-  height: 800px;
-}
 
 /* Main content styles */
-.main-content {
-  padding: 2rem;
+
+.main-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
-.data{
+/* Hero section styles */
+.hero {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: 800px;
+}
+
+.data,
+.weather {
+    display: grid;
+    
+}
+
+table {
+    padding: 1rem 1rem 2rem 1rem;
+    font-size: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+
+.label,
+.value {
+    font-size: 1em;
+    width: 175px;
+}
+.label {
+    text-align: right;
+    padding-right: 0.5rem;
+    font-weight: 600;
+}
+
+.value {
+    text-align: left;
+    padding-left: 0.5rem;
+    font-weight: 400;
+}
+h2{
+    position:relative;
+    color: white;
+    background-color: var(--background-color);
+    padding:20px;
+    text-align: center;
+    left:140px;
+    width:200px;
+}
+#weather-icon {
+    margin-left: 200px;
+    
+    width: 50px;
+}
+
+/* Larger Views*/
+@media (min-width: 768px) {
+
+    body {
+        position: relative;
+    }
+
+    table {
+        padding: 1rem;
+    }
+
+.data {
     position: absolute;
-    color: black;
+    color: rgba(0, 0, 0, 0.87);
     top:100px;
     margin:50px;
-    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+    background-color: rgba(189, 201, 28, 0.616); /* 50% transparent white */
+    box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding:5px;
+    text-align: center;
+    width:300px;
+}
+#weather-icon {
+    position: absolute;
+    margin-left: 100px;
+    top:15px;
+    width: 50px;
+    padding-top: 1rem;
+}
+.weather{
+    position: absolute;
+    color: rgba(0, 0, 0, 0.87);
+    right: 20px;
+    bottom: 200px;
+    background-color: rgba(189, 201, 28, 0.616); /* 50% transparent white */
     box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     padding:10px;
     text-align: center;
     width:300px;
-}
 
-.data p {
-    font-weight: bold; /* Make all labels normal weight */
-    display: flex;  
-    
 }
-  
-  .data p:nth-of-type(1) label,
-  .data p:nth-of-type(2) label,
-  .data p:nth-of-type(3) label,
-  .data p:nth-of-type(4) label,
-  .data p:nth-of-type(5) label,
-  .data p:nth-of-type(6) label,
-  .data p:nth-of-type(7) label,
-  .data p:nth-of-type(8) label {
-    font-weight: normal; /* Make specific labels bold */
-  }
-  
 h2{
     position:relative;
     color: white;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
     padding:20px;
     text-align: left;
-    right:30px;
-    
-    
+    left:-20px;
+    top:10px;
+    width:190px;
 }
+}
+
 /* Footer styles */
 footer {
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
   padding: 2rem;
-  bottom: 0;
   width: 100%;
 }
-
-@media (max-width: 768px) {
-    img {
-      height: 100%; /* Set a taller height for mobile views */
-      width: auto;
-    }
-  }
-/* Pseudo element for weather icon */
-.main-content::after {
-  content: url('weather-icon.png');
-  display: block;
-  margin-top: 1rem;
-}
-

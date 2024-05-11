@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philippines</title>
+    <title>Country Page - Philippines</title>
     <meta name="description" content="The subject of the page is about a country or place where you live or have visited or wish to visit.">
     <meta name="author" content="Kaye Gualingco">
     <script src="scripts/place.js" defer></script>
     <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
 
 
 </head>
@@ -25,25 +24,78 @@
               <img src="images/carabao-small.webp" alt="Temple name and location" width="500" height="333">
             </picture>
           </div>
+
           <div class="data">
             <h2>Data</h2>
-            <p>Area:<label>300,000 sq km</label></p>
-            <p>Population: <label>119,106,224</label></p>
-            <p>Capital: <label>Manila</label></p>
-            <p>Languages: <label>Filipino, English</label></p>
-            <p>Currency: <label>Philippine Peso</label></p>
-            <p>Timezone: <label>UTC+8</label></p>
-            <p>Calling Code: <label>+63</label></p>
-            <p>Internet TLD: <label>.ph</label></p>
+            <table id="data-table">
+                <tr>
+                    <th class="label">Area:</th>
+                    <td id="area" class="value">300,000 sq km</td>
+                </tr>
+                <tr>
+                    <th class="label">Population:</th>
+                    <td id="population" class="value">119,106,224</td>
+                </tr>
+                <tr>
+                    <th class="label">Capital:</th>
+                    <td id="capital" class="value">Manila</td>
+                </tr>
+                <tr>
+                    <th class="label">Languages:</th>
+                    <td id="languages" class="value">Filipino, English</td>
+                </tr>
+                <tr>
+                    <th class="label">Currency:</th>
+                    <td id="currency" class="value">Philippines Peso</td>
+                </tr>
+                <tr>
+                    <th class="label">Time Zone:</th>
+                    <td id="time-zone" class="value">UTC+8</td>
+                </tr>
+                <tr>
+                    <th class="label">Calling Code:</th>
+                    <td id="calling-code" class="value">+63</td>
+                </tr>
+                <tr>
+                    <th class="label">Internet TLD:</th>
+                    <td id="internet-tld" class="value">.ph</td>
+                </tr>
+            </table>
+        </div>
 
-          </div>
-          <div class="weather">
+        <div class="weather">
+            <h2>Weather</h2>
+            <img id="weather-icon" src="images/weather-icon.svg" alt="Weather Icon" width="60" height="60">
 
-          </div>
-
+            <table id="weather-table">
+                <tr>
+                    <th class="label">Temperature:</th>
+                    <td id="temperature" class="value">33&#176;C</td>
+                </tr>
+                <tr>
+                    <th class="label">Conditions:</th>
+                    <td id="conditions" class="value">Sunny</td>
+                </tr>
+                <tr>
+                    <th class="label">Wind:</th>
+                    <td id="wind" class="value">13 km/h</td>
+                </tr>
+                <tr>
+                    <th class="label">Wind Chill Factor:</th>
+                    <td id="wind-chill" class="value">13km/h</td>
+                </tr>
+            </table>
+        </div>
     </main>
     <footer>
-
+        <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+        <p id="lastModified"></p>
     </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+
+        
+    </script>
 </body>
 </html>
