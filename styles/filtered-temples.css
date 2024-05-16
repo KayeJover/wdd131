@@ -76,17 +76,19 @@ h1 {
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 auto; 
     align-items: center;
-    padding:10px;
+    padding:30px;
 }
 
 .temple-display {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 30px; 
+    grid-gap: 50px; 
     margin: 0 auto;
     max-width: 1000px;
+    font:bolder;
+    font-size: 14px;
+    
     
 }
 .temple {
@@ -98,7 +100,9 @@ main {
     align-items: center;
     max-width: 320px;
     border-radius: 20px;
-    padding:15px;
+    padding:40px;
+    font-size: larger;
+    
 
 }
 
@@ -120,12 +124,14 @@ li {
 }
 .label {
     text-align: right;
+    font-size:medium;
     
 }
 
 img {
-    width: 90%;
+    width: 250px;
     height: auto;
+    
 }
 
 footer{
@@ -133,12 +139,11 @@ footer{
     display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 30px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 20px;
     color:#282828;
     font-weight: 100;
     font-size: 100%;
-    margin:10px;
+    margin:0 ;
 
 }
 #lastModified {
