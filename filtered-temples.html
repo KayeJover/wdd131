@@ -6,102 +6,33 @@
     <title>Temple Album </title>
     <meta name="description" content="Design, develop, test, and then deploy a temple album page using own selections of temple pictures.">
     <meta name="author" content="Kaye Gualingco">
-    <script src="scripts/temples.js" defer></script>
-    <link rel="stylesheet" href="styles/temples.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
 </head>
 <body>
     <header>
         <h1>Temple Album</h1>
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
-
-            </ul>
-        </nav>
-        
-
-    </header>
-    <main class="main-content">
-
-        <h2 id="mainHeading">Home</h2>
-        <div class="container">
-        
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
-                 alt="Aba Nigeria">
-                 <figcaption>
-                    Aba Nigeria<br>
-                    LOCATION: Aba, Nigeria<br>
-                    DEDICATED: 2005, August, 7<br>
-                    SIZE: 11,500 sq ft
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
-                alt="Manti Utah">
-                <figcaption>Manti Utah</figcaption>
-            </figure>
-    
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/2018/800x500/Payson-Utah-Temple02.jpg"
-                alt="Payson Utah">
-                <figcaption>Payson Utah</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
-                alt="Yigo Guam">
-                <figcaption>Yigo Guam</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
-                alt="Washington D.C.">
-                <figcaption>Washington D.C.</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
-                alt="Lima Perú">
-                <figcaption>Lima Perú</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-                alt="Mexico City Mexico">
-                <figcaption>Mexico City Mexico</figcaption>
-            </figure>
-            <figure>
-                <img src="https://www.churchofjesuschrist.org/imgs/1b2c438fbf03dce153643292f31889fcc54dd95a/full/320%2C/0/default"
-                alt="Cebu City">
-                <figcaption>Cebu City</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/800x500/manila-philippines-temple-lds-685730-wallpaper.jpg"
-                alt="Metro Manila">
-                <figcaption>Metro Manila</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/seoul-korea/800x500/seoul-korea-temple-lds-424784-wallpaper.jpg"
-                alt="Seoul Korea">
-                <figcaption>Seoul Korea</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/800x500/laie-temple-775370-wallpaper.jpg"
-                alt="Laie Hawaii">
-                <figcaption>Laie Hawaii</figcaption>
-            </figure>
-            <figure>
-                <img src="https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/sapporo-japan/800x500/sapporo-japan-exterior-night-1945721.jpg"
-                alt="Sapporo Japan">
-                <figcaption>Sapporo Japan</figcaption>
-            </figure>
-            
+        <div class="hamburger-menu">
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
+            <div class="hamburger"></div>
         </div>
-
-    </main>
+        
+        <nav class="nav-links">
+            <a id="home" href="#" onclick="displayTemples('home')">Home</a>
+            <a id="old" href="#" onclick="displayTemples('old')">Old</a>
+            <a id="new" href="#" onclick="displayTemples('new')">New</a>
+            <a id="large" href="#" onclick="displayTemples('large')">Large</a>
+            <a id="small" href="#" onclick="displayTemples('small')">Small</a>
+        </nav>
+        </header>
+        
+        <main>
+            <div class="temple-display">
+            </div>
+        </main>
+        
     <footer>
         <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
         <p id="lastModified"></p>
