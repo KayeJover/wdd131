@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Project Site Plan </title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kaye Gualingco - Project Site Plan ">
+    <meta name="author" content="Kaye Gualingco">
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Negros Wheel Warriors Club</h1>
+    </header>
+
+    <main>
+        <div id="header"></div>
+    <section>
+        <h2>Site Name:</h2>
+        <p>This name represents a club that is focused on mountain or road biking in the Negros Occidental.  </p>
+    </section>
+    <section>
+        <h2>Site Purpose:</h2>
+        <p>The site provides a certificate and medal for members who complete or finish the challenging bike events. We also do bike lessons, fund-raising, and seminars. </p>    </section>
+
+    <section id="scenarios">
+        <h2>Scenarios:</h2>
+        <ul>
+            <li>
+                <p>How can I join the Negros Wheel Warriors Club?</p>
+            </li>
+            <li>
+                <p>What are the upcoming cycling events in the Negros region?</p>
+            </li>
+            <li>
+                <p>Are there any training programs or group rides organized by the club?</p>
+            </li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Color Schema:</h2>
+        <ul id="color-schema">
+            <li>
+                <p> Green: #799351 - text, backgrounds and other elements.</p>
+            </li>
+            <li>
+                <p> Brown: #B99470 - text.</p>
+            </li>
+            <li>
+                <p>White: #FEFAF6 - text, backgrounds .</p>
+            </li>
+            <li>
+                <p>Black: #000000 - text and  other elements</p>
+            </li>
+            
+        </ul>
+    </section>
+    <section>
+        <h2>Typography:</h2>
+        <ul id="typography">
+            <li>
+                <p id="typo1">Header Title Font: Kalam</p>
+            </li>
+            <li>
+                <p id="typo2">Sub-Headings Font: Kalam</p>
+            </li>
+            <li>
+                <p>Body text font: Merriweather, serif</p>
+            </li>
+        </ul>
+    </section>
+    <section id="wireframes">
+        <h2>Wireframes:</h2>
+        <h3 id="mobile">Wireframe for Mobile View</h3>
+        <img id="wireframe-mobile" src="images/siteplan-mobile.JPG" alt="wireframe for mobile"
+            loading="lazy" width="211" height="568">
+        
+        <h3 id="desktop">Wireframe for Desktop View</h3>
+        <img id="wireframe-desktop" src="images/siteplan-larger.JPG" alt="wireframe for desktop"
+            loading="lazy" width="388" height="506">
+    </section>
+</main>
+<footer>
+    <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+    <p id="lastModified"></p>
+
+</footer>
+<script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+
+    
+</script>
+</body>
+</html>
