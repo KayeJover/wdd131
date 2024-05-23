@@ -1,0 +1,53 @@
+:root {
+    --background-color: #FFD0D0; /*Light Pink*/
+    --primary-color: #CA8787; /*Dark Pink*/
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body {
+    display: grid;
+    width: 100%;
+    min-height: 10%;
+    max-width: 1400px;
+    min-width: 380px;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    
+
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    padding:10px;
+}
+main{
+    background-color: var(--background-color);
+    width: 450px;
+}
+/*Product Name*/
+form{
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+#product-name{
+    margin:10px;
+    padding:5px;
+    width:400px;
+}
+/*Overall Rating*/
+.rating label {
+    position:relative;
+    margin-bottom: 100px;
+    float: left;
+    text-align: center;
+}
+
+
