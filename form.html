@@ -22,33 +22,33 @@
                 <option value="" selected disabled>Choose a Product ...</option>
             </select>
             <!--Overall Rating-->
-            <div class="rating">Overall Rating(required)</div>
+            <div class="rating">Overall Rating (required)</div>
                
+            <div class="stars">
                 <label for="overallRating1">☆</label>
-                <input type="radio" id="overallRating1" name="overallRating" required>
-                
                 <label for="overallRating2">☆☆</label>
-                <input type="radio" id="overallRating2" name="overallRating" required>
-                
                 <label for="overallRating3">☆☆☆</label>
-                <input type="radio" id="overallRating3" name="overallRating" required>
-                
                 <label for="overallRating4">☆☆☆☆</label>
-                <input type="radio" id="overallRating4" name="overallRating" required>
-                
                 <label for="overallRating5">☆☆☆☆☆</label>
+            </div>
+            <div class="radio-buttons">
+                <input type="radio" id="overallRating1" name="overallRating" required>
+                <input type="radio" id="overallRating2" name="overallRating" required>
+                <input type="radio" id="overallRating3" name="overallRating" required>
+                <input type="radio" id="overallRating4" name="overallRating" required>
                 <input type="radio" id="overallRating5" name="overallRating" required>
-
+            </div>
         <!--Date of Installation-->    
         <div class="date">
-            <label for="installationDate">Date of Installation:</label>
+            <label for="installationDate">Date of Installation</label><br>
             <input type="date" id="installationDate" name="installationDate" required>
         </div>
         <!--Useful Features-->
         <div class="features">
-                <label>Which features did you find useful in the product?</label>
-                <label>Check all that apply</label><br>
-                
+                <label>Which features did you find useful in the product?</label><br>
+            <div class="apply">
+                <label>(Check all that apply)</label><br>
+            </div>  
                 <input type="checkbox" id="durability" name="usefulFeatures" value="Durability">
                 <label for="durability">Durability</label><br>
                 
@@ -62,8 +62,6 @@
                 <label for="design">Design</label><br>
             
         </div>
-        
-
         <!--Written Review-->
         <div class="review">
             <label for="writtenReview">Written Review <span>(Optional)</span></label><br>
@@ -84,7 +82,18 @@
 
     </main>
     <footer>
-
+        
+            <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+            <p id="lastModified"></p>
+    
     </footer>
+    <script>
+            document.getElementById('currentyear').textContent = new Date().getFullYear();
+            document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+    
+            
+    </script>
+    
+    
 </body>
 </html>
