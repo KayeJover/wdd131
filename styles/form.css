@@ -83,12 +83,14 @@ form{
 /*Written Review*/
 .review label{
     display: block;
-    
 }
 span{
     color:#121481;
     font-style: italic;
-
+}
+.review textarea{
+    padding:50px;
+    width:100%;
 }
 /*User Nmae*/
 .user label{
