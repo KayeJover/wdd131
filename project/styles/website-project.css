@@ -1,0 +1,156 @@
+:root {
+    --secondary-color: #ab8968; 
+    --background-color: #799351; 
+    --primary-color: #FEFAF6; 
+
+    --heading-font: "Kalam", serif;
+    --paragraph-font: "Merriweather", serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+}
+header {
+    background-color: var(--background-color);
+    font-family: var(--heading-font);
+}
+header img{
+    position: relative;
+    float:left;
+    bottom:85px;
+    width:22%;
+}
+h1{
+    text-align: center;
+    padding:20px;
+    font-size: 50px;
+    word-spacing: 40px;
+}
+nav {
+    background-color: var(--secondary-color);
+    max-width: 2000px;
+    
+}
+nav ul {
+    list-style-type: none;
+
+}
+nav a{
+    display: block;
+    color: var(--primary-color);
+    text-align:center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size:150%;
+    position: relative;
+    right:150px;
+}
+nav a:hover{
+    text-decoration:underline;
+}
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+        justify-content:space-between;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
+main{
+    margin:0;
+    
+}
+#welcome img{
+    margin-left: 800px;
+    border: 5px solid var(--background-color);
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+    border-radius: 20px;
+}
+
+#welcome h2{
+    position:absolute;
+    left:110px;
+    bottom: 350px;
+    color: var(--background-color);
+    
+}
+#welcome p{
+    position: absolute;
+    width:700px;
+    color: var(--secondary-color);
+    margin-left: 40px;
+    bottom:50px;
+    font-weight: bold;
+    font-size: 18px;
+}
+#about h2{
+    position:absolute;
+    left: 800px;
+    margin-top: 100px;
+    color: var(--background-color);
+}
+#about img{
+    margin-top:150px;
+    margin-left:50px;
+    border: 5px solid var(--background-color);
+    box-shadow: 5px 5px 5px rgb(147, 147, 147);
+    border-radius: 20px;
+}
+#first{
+    position: absolute;
+    left:600px;
+    bottom:-350px;
+    width:700px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+#second{
+    position: absolute;
+    left:600px;
+    bottom:-550px;
+    width:700px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+#third{
+    position: absolute;
+    left:600px;
+    bottom:-700px;
+    width:700px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+footer{
+    background-color: var(--background-color);
+    margin-top: 150px;
+    padding:20px;
+    text-align: center;
+}
+
+/* R E G I S T E R */
+form{
+    padding:60px;
+    width:1000px;
+}
+fieldset{
+    padding:30px;
+    height:500px;
+}
+legend{
+    font-family: var(--heading-font);
+    font-size: 40px;
+}
+label{
+    padding-top: 100px;
+    font-size: 20px;
+}

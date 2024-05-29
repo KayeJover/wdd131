@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | WDD 131 | Project Site Plan</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kaye Gualingco - Project Site Plan ">
+    <meta name="author" content="Kaye Gualingco">
+    <link rel="stylesheet" href="styles/website-project.css">
+    <script src="scripts/website-project.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/negros.png" alt="Negros Logo" loading="lazy" width="500" height="300">
+        <h1>Negros Wheel Warriors Club</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <div id="header"></div>
+        <section id="welcome">
+            <h2>Welcome to the Negros Wheel Warriors Club</h2>
+            <img src="images/welcome.jpg" alt="Welcome Image" loading="lazy" width="500" height="400">
+
+            <p>We are proud to introduce the Negros Wheel Warriors Club, a passionate community dedicated to mountain and road biking in the beautiful region of Negros Occidental. Our club brings together cyclists of all levels, from beginners to veteran riders, fostering a love for biking and an appreciation for the stunning landscapes our area has to offer. Join us in exploring the diverse terrain, from challenging mountain trails to scenic road routes, while promoting a healthy and active lifestyle. Whether you ride for adventure, fitness, or camaraderie, the Negros Wheel Warriors Club is your home for all things biking in Negros Occidental. </p>
+        </section>
+        <section id="about">
+            <h2>About Negros Wheel Warriors Club</h2>
+            <img src="images/about.jpg" alt="About Image" loading="lazy" width="500" height="400">
+
+            <p id="first">The Negros Wheel Warriors Club is a vibrant community of mountain and road biking enthusiasts based in Negros Occidental. Our name embodies the spirit of adventure and camaraderie that defines our club. We cater to cyclists of all levels, from those just beginning their biking journey to experienced riders seeking new challenges.</p>
+
+            <p id="second"> Our mission is to promote the joys of biking while exploring the diverse and beautiful landscapes of Negros Occidental. Members of our club enjoy a wide range of activities, including organized rides, skill-building workshops, and community events. Whether you’re navigating rugged mountain trails or cruising scenic road routes, you’ll find a supportive and enthusiastic group of fellow riders in the Negros Wheel Warriors Club.</p>
+                
+            <p id="third">Join us as we pedal through breathtaking terrains, improve our biking skills, and build lasting friendships. The Negros Wheel Warriors Club is your gateway to experiencing the thrill of biking in one of the most picturesque regions of the Philippines.  </p>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+
+        
+    </script>
+</body>
+</html>
