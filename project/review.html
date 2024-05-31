@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Page | WDD 131 | Project Site Plan</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Kaye Gualingco - Project Site Plan ">
+    <meta name="author" content="Kaye Gualingco">
+    <link rel="stylesheet" href="styles/website-project.css">
+    <link rel="stylesheet" href="styles/website-large.css">
+
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/website-project.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/negros.png" alt="Negros Logo" loading="lazy" width="500" height="300">
+        <h1>Membership Review</h1>
+        <button id="menu" title="menu"></button>
+        <nav class="nav">
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
+            <div class="close">&times;</div>
+
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        <div class="messages-sent">
+            <h2>Thank you for submitting your information!</h2>
+            <p>
+                You have sent <span class="message-Total"></span> messages.
+            </p>
+        </div>
+    </main>
+    <footer id="review">
+        <p>&copy; <span id="currentyear"></span> 🌻 Kaye Jover Gualingco 🌻 Philippines</p>
+        <p id="lastModified"></p>
+
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modification: ' + document.lastModified;
+
+        
+    </script>
+</body>
+</html>

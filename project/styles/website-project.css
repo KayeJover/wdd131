@@ -15,6 +15,7 @@ body {
     font-family: var(--paragraph-font);
     background-color: var(--primary-color);
     overflow-x: hidden;
+
 }
 header {
     background-color: var(--background-color);
@@ -24,18 +25,16 @@ header img{
     position: relative;
     float:left;
     bottom:85px;
-    width:22%;
+    width:100px;
 }
 h1{
     text-align: center;
-    padding:20px;
-    font-size: 50px;
-    word-spacing: 40px;
+    padding:40px;
+    font-size: 20px;
+    
 }
 nav {
     background-color: var(--secondary-color);
-    max-width: 2000px;
-    
 }
 nav ul {
     list-style-type: none;
@@ -65,81 +64,85 @@ nav a:hover{
 }
 main{
     margin:0;
-    
 }
 #welcome img{
-    margin-left: 800px;
+    width:500px;
     border: 5px solid var(--background-color);
     box-shadow: 5px 5px 5px rgb(147, 147, 147);
     border-radius: 20px;
 }
 
 #welcome h2{
-    position:absolute;
-    left:110px;
-    bottom: 350px;
+    position: absolute;
+    top: 200px;
+    font-size: 19px;
+    width:500px;
     color: var(--background-color);
     
 }
 #welcome p{
     position: absolute;
-    width:700px;
-    color: var(--secondary-color);
-    margin-left: 40px;
-    bottom:50px;
+    width:450px;
+    margin:20px;
+    color: #896e53;
+    top:750px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 #about h2{
-    position:absolute;
-    left: 700px;
-    margin-top: 100px;
+    position: absolute;
+    text-align: center;
+    font-size: 19px;
+    width:500px;
+    top:1050px;
     color: var(--background-color);
 }
 #about img{
-    margin-top:150px;
-    margin-left:50px;
+    position:absolute;
+    width:480px;
     border: 5px solid var(--background-color);
     box-shadow: 5px 5px 5px rgb(147, 147, 147);
     border-radius: 20px;
+    top:195%;
 }
 #first{
     position: absolute;
-    left:600px;
-    bottom:-350px;
-    width:700px;
-    color: var(--secondary-color);
+    width:450px;
+    margin:20px;
+    color: #896e53;
+    top:270%;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 #second{
     position: absolute;
-    left:600px;
-    bottom:-550px;
-    width:700px;
-    color: var(--secondary-color);
+    width:450px;
+    margin:20px;
+    color: #896e53;
+    top:295%;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 #third{
     position: absolute;
-    left:600px;
-    bottom:-700px;
-    width:700px;
-    color: var(--secondary-color);
+    width:450px;
+    margin:20px;
+    color: #8c7055;
+    top:325%;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 footer{
     background-color: var(--background-color);
-    margin-top: 150px;
+    margin-top: 1350px;
     padding:20px;
     text-align: center;
 }
 
 /* R E G I S T E R */
 form{
-    width:1000px;
+    width:200px;
+    margin-left: 100px;
 }
 .register fieldset{
     margin: 2rem 0;
@@ -199,20 +202,17 @@ form{
 /* E V E N T S*/
 /* 2 0  2 1 */
 #column h2{
-    position: absolute;
-    margin-left: 500px;
-    top:-80px;
+    text-align: center;
     font-size: 30px;
     font-family: var(--heading-font);
-    
 }
 #column{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: absolute;
-    left: 20px;
-    grid-gap: 50px;
-    margin-top: 100px;
+    grid-template-columns: 1fr;
+    position:absolute;
+    grid-gap: 30px;
+    margin-top: 50px;
+    left:50px;
 }
 #column img{
     border: 5px solid var(--background-color);
@@ -222,20 +222,17 @@ form{
 }
 /* 2 0 2 2 */
 #column1 h2{
-    position: absolute;
-    margin-left: 480px;
-    top:-100px;
-    padding: 20px;
+    text-align: center;
     font-size: 30px;
     font-family: var(--heading-font);
 }
 #column1{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: absolute;
-    left: 20px;
-    grid-gap: 50px;
-    margin-top: 900px;
+    grid-template-columns: 1fr;
+    position:absolute;
+    grid-gap: 30px;
+    margin-top: 2200px;
+    left:50px;
 }
 #column1 img{
     border: 5px solid var(--background-color);
@@ -244,20 +241,17 @@ form{
 }
 /* 2 0 2 3 */
 #column2 h2{
-    position: absolute;
-    margin-left: 480px;
-    top:-100px;
-    padding: 20px;
+    text-align: center;
     font-size: 30px;
     font-family: var(--heading-font);
 }
 #column2{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: absolute;
-    left: 20px;
-    grid-gap: 50px;
-    margin-top: 1700px;
+    grid-template-columns: 1fr;
+    position:absolute;
+    grid-gap: 30px;
+    margin-top: 4400px;
+    left:50px;
 }
 #column2 img{
     border: 5px solid var(--background-color);
@@ -266,23 +260,161 @@ form{
 }
 /* 2 0 2 4 */
 #column3 h2{
-    position: absolute;
-    margin-left: 480px;
-    top:-100px;
-    padding: 20px;
+    text-align: center;
     font-size: 30px;
     font-family: var(--heading-font);
 }
 #column3{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    position: absolute;
-    left: 20px;
-    grid-gap: 50px;
-    margin-top: 2500px;
+    grid-template-columns: 1fr;
+    position:absolute;
+    grid-gap: 30px;
+    margin-top: 6600px;
+    left:50px;
 }
 #column3 img{
     border: 5px solid var(--background-color);
     box-shadow: 5px 5px 5px rgb(147, 147, 147);
     border-radius: 20px;
+}
+#last{
+    background-color: var(--background-color);
+    margin-top: 8700px;
+    padding:20px;
+    text-align: center;
+}
+
+/* C O N T A C T */
+.contact fieldset{
+    margin: 2rem 0;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    border: 10px solid #ddd;
+    margin-left: 700px;
+    width:50%;
+}
+#us h2{
+    position: absolute;
+    left:150px;
+    font-family: var(--heading-font);
+    font-size: 40px;
+}
+#top{
+    position: absolute;
+    margin-top: 100px;
+    left:90px;
+    font-size: 25px;
+}
+#middle{
+    position: absolute;
+    margin-top: 150px;
+    left:150px;
+    font-size: 20px;
+}
+#bottom{
+    position: absolute;
+    margin-top: 200px;
+    left:100px;
+    font-size: 20px;
+
+}
+.contact{
+    position: absolute;
+    right:880px;
+    margin-top:300px;
+    
+}
+.contact label{
+    display:block;
+    font-size: 20px;
+    padding-top: 1rem;
+    color: #9c2c13;
+}
+.contact input[type="text"],
+.contact input[type="email"] {
+    display: block;
+    padding:.75rem;
+    border-radius: 6px;
+    border: solid 1px #999;
+    width: 90%;
+    max-width: 400px;
+
+}
+#comments{
+    padding:10px;
+    width:100%;
+    padding-bottom: 100px;
+}
+#comment{
+    color: #9c2c13;
+
+}
+.contact input[type="submit"]{
+    border:none;
+    border-radius: 6px;
+    background-color: var(--background-color);
+    padding: .8rem;
+    width:100%;
+    padding:20px;
+    margin-top: 20px;
+    font-size: 20px;
+}  
+#last1{
+    background-color: var(--background-color);
+    margin-top: 900px;
+    padding:20px;
+    text-align: center;
+}
+/* HAMBURGER ICON*/
+.hamburger, .close {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+}
+.close {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    #nav-links {
+        display: none;
+        flex-direction:row;
+        width: 10%;
+        text-align: center;
+        
+    }
+
+    #nav-links.active {
+        display: flex;
+    }
+
+    #nav-links li {
+        margin: 0 auto;
+    }
+
+    nav a {
+        position: relative;
+        right: 90px ;
+    }
+}
+/* LOCAL STORAGE*/
+#review{
+    background-color: var(--background-color);
+    padding:20px;
+    text-align: center;
+}
+.messages-sent {
+    text-align: center;
+    padding: 10px;
+}
+.messages-sent p{
+    text-align: center;
+    padding: 20px;
 }
